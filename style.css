@@ -1,36 +1,20 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: Arial, sans-serif;
 }
 
-/*Checkerboard*/
-  body {
-      display: flex;
-      height: 100vh;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 450px 450px;
+  height: 1000px;
+  padding-top: 50px;
+  padding-left: 30px;
 
-  .container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 45vw;
-      height: 45vw;
-  }
-
-  div {
-      flex-basis: 12.5%;
-      height: 12.5%;
-  }
-.box{
-  background-color:#fff
-}
-
-.box:nth-child(-2n+8), 
-.box:nth-child(8) ~ div:nth-child(-2n+15), 
-.box:nth-child(16) ~ div:nth-child(-2n+24),
-.box:nth-child(24) ~ div:nth-child(-2n+31),
-.box:nth-child(32) ~ div:nth-child(-2n+40),
-.box:nth-child(40) ~ div:nth-child(-2n+47),
-.box:nth-child(48) ~ div:nth-child(-2n+56),
-.box:nth-child(56) ~ div:nth-child(-2n+63) {
-background-color: #000;
+.product {
+  width: 45%;
+  margin: 2.5%;
+  background-color: cadetblue;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
