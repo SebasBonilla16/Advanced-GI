@@ -34,12 +34,3 @@ html {
 .box:nth-child(56) ~ div:nth-child(-2n+63) {
 background-color: #000;
 }
-
-.table{
-  height: 456px;
-  width: 800px;
-}
-.table, td{
-  border: solid 1px;
-  border-collapse: collapse;
-}
