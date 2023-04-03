@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*Checkerboard*/
+  body {
+      display: flex;
+      height: 100vh;
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 45vw;
+      height: 45vw;
+  }
+
+  div {
+      flex-basis: 12.5%;
+      height: 12.5%;
+  }
+.box{
+  background-color:#fff
+}
+
+.box:nth-child(-2n+8), 
+.box:nth-child(8) ~ div:nth-child(-2n+15), 
+.box:nth-child(16) ~ div:nth-child(-2n+24),
+.box:nth-child(24) ~ div:nth-child(-2n+31),
+.box:nth-child(32) ~ div:nth-child(-2n+40),
+.box:nth-child(40) ~ div:nth-child(-2n+47),
+.box:nth-child(48) ~ div:nth-child(-2n+56),
+.box:nth-child(56) ~ div:nth-child(-2n+63) {
+background-color: #000;
+}
+
+.table{
+  height: 456px;
+  width: 800px;
+}
+.table, td{
+  border: solid 1px;
+  border-collapse: collapse;
+}
